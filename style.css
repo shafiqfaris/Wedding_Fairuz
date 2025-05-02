@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Georgia', serif;
-  background-color: #fffaf8;
+  background-color:  #ffeef2;
 }
 .hidden {
   display: none !important;
@@ -56,7 +56,7 @@ body {
   height: clamp(140px, 30vw, 180px);
   border-radius: 50%;
   border: none;
-  background-color: #bebebee7;
+  background-color: #fffaf5;
   box-shadow: 0 4px 14px rgba(0,0,0,0.12);
   padding: 0;
   margin: 0;
@@ -226,7 +226,7 @@ section {
 .program-card {
   max-width: 90%;
   margin: auto;
-  background: white;
+  background: #fffaf5;
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -265,7 +265,7 @@ section {
   background-color: rgba(0,0,0,0.5);
 }
 .modal-content {
-  background-color: #fff;
+  background-color: #fffaf5;
   padding: 30px;
   border-radius: 14px;
   text-align: center;
@@ -302,7 +302,7 @@ section {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #f5ecdf;
+  background: #fffaf5;
   border-top: 1px solid #ccc;
   display: flex;
   justify-content: space-around;
@@ -395,17 +395,17 @@ section {
   bottom: 10px;
 }
 .swiper-pagination-bullet {
-  background: #d63384;
+  background: #fffaf5;
   opacity: 0.5;
 }
 .swiper-pagination-bullet-active {
-  background: #d63384;
+  background: #fffaf5;
   opacity: 1;
 }
 
 /* Contact Modal */
 .contact-modal {
-  background-color: #f6e9d7;
+  background-color: #fffaf5;
   border-radius: 16px;
   padding: 30px 20px;
   max-width: 400px;
@@ -415,7 +415,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fef9f4;
+  background: #fffaf5;
   margin-top: 15px;
   padding: 10px 15px;
   border-radius: 10px;
@@ -466,7 +466,7 @@ section {
 
 /* Map Modal */
 .location-modal {
-  background-color: #f6e9d7;
+  background-color: #fffaf5;
   border-radius: 16px;
   padding: 30px 20px;
   max-width: 400px;
@@ -522,14 +522,14 @@ section {
 .gift-modal {
   max-height: 90vh;
   overflow-y: auto;
-  background-color: #f6e9d7;
+  background-color: #fffaf5;
   padding: 30px 20px;
   border-radius: 16px;
   max-width: 450px;
   width: 90%;
 }
 .gift-card {
-  background: #fef9f4;
+  background: #fffaf5;
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 20px;
@@ -569,7 +569,7 @@ section {
 
 /* RSVP */
 .rsvp-modal {
-  background: #f6e9d7;
+  background: #fffaf5;
   border-radius: 16px;
   padding: 25px 20px;
   max-width: 450px;
@@ -660,7 +660,7 @@ textarea {
   transition: background-color 0.3s;
 }
 .music-toggle:hover {
-  background-color: #f0f0f0;
+  background-color: #fffaf5;
 }
 
 .info-box {
@@ -760,7 +760,7 @@ textarea {
 }
 
 .rsvp-modal button[type="submit"] {
-  background-color: #b47d7d;
+  background-color: #fffaf5;
   color: white;
 }
 
@@ -852,10 +852,10 @@ textarea {
   align-items: center;
   gap: 10px;
   padding: 10px 18px;
-  border: 1.5px solid #c5b9ac;
+  border: 1.5px solid #fffaf5;
   border-radius: 999px;
   background-color: #fffaf5;
-  color: #6b4e32;
+  color: #fffaf5;
   font-family: 'Georgia', serif;
   font-size: 14px;
   font-weight: 500;
@@ -887,10 +887,10 @@ textarea {
 .save-date-btn {
   padding: 10px 22px;
   font-size: 14px;
-  border: 1.5px solid #bba692;
+  border: 1.5px solid #fffaf5;
   border-radius: 999px;
   background-color: #fffaf5;
-  color: #6b4e32;
+  color: #ffa4c3;
   font-family: 'Georgia', serif;
   font-weight: 500;
   cursor: pointer;
@@ -944,7 +944,7 @@ textarea {
   width: 6px;
 }
 .ucapan-scrollbox::-webkit-scrollbar-thumb {
-  background-color: #ffe17c;
+  background-color: #fffaf5;
   border-radius: 10px;
 }
 .ucapan-scrollbox::-webkit-scrollbar-track {
