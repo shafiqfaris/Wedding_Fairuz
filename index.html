@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Izzati & Fairuz Wedding</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Gate Animation -->
+<div class="gate-left" id="gateLeft"></div>
+<div class="gate-right" id="gateRight"></div>
+
+<link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+
+<!-- Open Button -->
+<button class="open-btn" onclick="openGate()">
+  <div class="open-inner">
+    <div class="open-names">Izzati <br> & <br>  Fairuz</div>
+    <div class="open-sub">Buka</div>
+  </div>
+</button>
+
+
+
+<!-- Background Music -->
+<audio id="bgMusic" src="assets/BGMusic.mp3" loop preload="auto"></audio>
+
+<!-- Main Content -->
+<main id="mainContent" class="hidden">
+
+  <!-- Video Section -->
+<section class="program fade-in">
+  <div class="video-container">
+    <video src="assets/video.mp4" autoplay muted loop playsinline></video>
+  </div>
+
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">  <!-- Invitation Details -->
+  <section class="invitation">
+    <img src="assets/bismillah.png" alt="Bismillah" style="max-width: 200px; margin-bottom: 5px;" />
+    <p>Assalamualaikum W.B.T</p>
+    <p>&</p>
+    <p>Salam Sejahtera</p>
+    <br>
+    <p>Dengan penuh kesyukuran, kami ingin menjemput</p>
+    <p>Dato' | Datin | Dr | Tuan | Puan | Encik | Cik</p>
+    <p>ke majlis akad nikah</p>
+  
+    <div class="invitation-names">
+
+      <h2 class="fancy-names">Noor Izzati Amir</h2>
+      <p>Puteri kepada Azizah Binti Taib</p>
+      <br>
+      <p class="and-divider">&</p>
+      <h2 class="fancy-names">Mohamed Fairuz Mustapha</h2>
+      <p> Putera kepada Umi Kalthom Binti A Rahman</p>
+    </div>
+  </section>
+  
+</section>
+  <!-- Program Section -->
+  <section class="program fade-in">
+    <div class="timeline-box">
+      <div class="timeline-icon">
+        <img src="assets/calendar-icon.png" alt="Calendar" />
+      </div>
+      <p class="timeline-label">Ahad</p>
+      <p class="timeline-text">25.05.2025</p>  
+      <div class="timeline-divider"></div>
+    
+      <div class="timeline-icon">
+        <img src="assets/clock-icon.png" alt="Clock" />
+      </div>
+      <p class="timeline-label">11:30 AM - 3:30 PM</p>
+  
+      <div class="timeline-divider"></div>
+  
+      <div class="timeline-icon">
+        <img src="assets/location-icon.png" alt="Location" />
+      </div>
+      <p class="timeline-label">Evanthea Wedding Hall</p>
+      <p class="timeline-text">Kuala Lumpur</p>
+  
+      <div class="ayah-box">
+        <img src="assets/ayah-arabic.png" alt="Ayat Quran" class="ayah-arabic" />
+        <p class="ayah-text">
+          “dan Kami jadikan kamu berpasang-pasangan”<br>
+          <em>Surah An-Naba: 8</em>
+        </p>
+      </div>
+  
+      <!-- Optional: Save Date Button here -->
+      <div class="save-date-container" style="margin-top: 24px;">
+        <button class="save-date-btn" onclick="openModal('calendarModal')">
+          Simpan Tarikh
+        </button>
+      </div>
+    </div>
+  </section>
+  
+</section> 
+
+<!-- CALENDAR MODAL -->
+<div id="calendarModal" class="modal" onclick="handleModalClick(event, 'calendarModal')">
+  <div class="modal-content calendar-modal">
+    <span class="close" onclick="closeModal('calendarModal')">&times;</span>
+    <h3>25.05.2025</h3>
+    <p>11:30 pagi – 3:30 petang</p>
+
+    <div class="calendar-links-minimal">
+      <a href="assets/fairuzIzzatiics.ics" class="calendar-min-btn" download>
+        <img src="assets/apple-icon.png" alt="Apple Icon" />
+        <span>Apple Calendar</span>
+      </a>
+    
+      <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Majlis+Walimatul Urus+Izzati+%26+Fairuz&dates=20250525T033000Z/20250525T073000Z&details=Majlis+akad+nikah+dan+jamuan+makan+di+Evanthea+Wedding+Hall&location=Evanthea+Wedding+Hall" target="_blank" class="calendar-min-btn">
+        <img src="assets/google-icon.png" alt="Google Icon" />
+        <span>Google Calendar</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+  function handleModalClick(event, modalId) {
+  const content = document.querySelector(`#${modalId} .modal-content`);
+  if (!content.contains(event.target)) {
+    closeModal(modalId);
+  }
+}
+
+</script>
+  
+<section class="program fade-in">
+  <section class="program">
+    <div class="program-card">
+      <h3>ATUR CARA MAJLIS</h3>
+      <p>Kehadiran Tetamu: 
+        <br>
+        <strong>11:30 pm</strong></p>
+      <p>Akad Nikah: 
+        <br>
+        <strong>12:30 pm</strong></p>
+      <p>Jamuan Makan: 
+        <br> 
+        <strong>1:30 pm – 3:30 pm</strong></p>
+    </div>
+  </section>
+</section>
+
+<!-- Doa Section -->
+<section class="doa-section fade-in">
+  <img src="assets/bismillah.png" alt="Bismillah" class="bismillah-img" />
+
+  <p class="doa-text">
+    "Ya Allah Ya Tuhan Kami<br>
+    Berkatilah Majlis Kami<br>
+    Semoga Ianya Berjalan Dengan Sempurna<br>
+    Seperti mana Yang Engkau Redhai<br>
+    Dan Semoga Jodoh Perkahwinan Ini<br>
+    Berkekalan Buat Selama-lamanya<br>
+    Serta Berbahagia Di Dunia Dan Akhirat."
+  </p>
+  <img src="assets/amin.png" alt="Amin" class="amin-img">
+</section>
+
+
+  <!-- Notes for location -->
+  <section class="location-note">
+    <p><strong>Nota:</strong><br>
+    Sebaik sahaja anda telah tiba di lokasi, sila tekan butang <strong>"Guide"</strong> di bawah untuk mendapatkan panduan masuk ke dewan. Kemudahan parking valet
+    disediakan untuk semua tetamu.</p>
+  </section>
+  
+  
+
+  <!-- Countdown -->
+  <section class="countdown" id="countdown">
+    <h2>Countdown To Akad Nikah</h2>
+    <div id="timer"></div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <h3>Our Beautiful Moments</h3>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/pic (10).jpg" alt="Photo 1" /></div>
+        <div class="swiper-slide"><img src="assets/pic (11).jpg" alt="Photo 2" /></div>
+        <div class="swiper-slide"><img src="assets/pic (12).jpg" alt="Photo 3" /></div>
+        <div class="swiper-slide"><img src="assets/STKT1253.jpg" alt="Photo 7" /></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Ucapan Section -->
+  <section class="ucapan-container">
+    <h2 class="ucapan-title">Ucapan</h2>
+    <div class="ucapan-scrollbox">
+      <div class="ucapan-message">
+      <p>Penat </p>
+      <strong>Shafiq</strong>
+    </div>
+    <div class="ucapan-message">
+      <p>Lapar !</p>
+      <strong>Cheetos</strong>
+    </div>
+    <div class="ucapan-message">
+      <p>Congrats, semoga bahagia dunia akhirat.</p>
+      <strong>Ibu</strong>
+    </div>
+    <div class="ucapan-message">
+      <p>Semoga bahagia ke Jannah</p>
+      <strong>Azizah</strong>
+    </div>
+  </div>
+  </section>
+
+  
+</main>
+
+<script>
+const ucapanObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      }
+    });
+  },
+  {
+    root: document.querySelector('.ucapan-scrollbox'),
+    threshold: 0.1
+  }
+);
+
+document.querySelectorAll('.ucapan-message').forEach(el => {
+  ucapanObserver.observe(el);
+});
+</script>
+
+
+<!-- Load wishes dynamically from CSV -->
+<script src="load-wishes.js"></script>
+<script>
+  loadUcapanFromCSV('wishes.csv', 'ucapan-section');
+</script>
+
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!--
+<script>
+  fetch("https://script.google.com/macros/s/AKfycbzGAvCKB7KkJM8_CAwFBeuwK2rHXNYM_dhJpiS4KFJ1Voq-dWln81J_pplwYSqba9Ja/exec")
+    .then(res => res.json())
+    .then(wishes => {
+      const wrapper = document.getElementById("wishesWrapper");
+      wishes.forEach(wish => {
+        const slide = document.createElement("div");
+        slide.className = "swiper-slide";
+        slide.innerHTML = `
+          <div class="wish-quote">“${wish.message}”</div>
+          <div class="wish-name">${wish.name}</div>
+        `;
+        wrapper.appendChild(slide);
+      });
+  
+      new Swiper('.wish-swiper', {
+        loop: true,
+        direction: 'vertical',
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+      });
+    });
+  </script>
+-->
+  
+
+<!-- All MODALS should go ABOVE bottom nav -->
+
+
+<!-- GUIDE MODAL -->
+<div id="giftModal" class="modal" onclick="handleModalClick(event, 'giftModal')">
+  <div class="modal-content guide-modal">
+    <span class="close" onclick="closeModal('giftModal')">&times;</span>
+    <h3>CARA KE LOKASI</h3>
+    <p>Berikut adalah panduan untuk sampai ke lokasi majlis:</p>
+
+    <!-- Video Placeholder -->
+    <video src="assets/guide.mp4" controls style="width: 100%; border-radius: 12px; margin-top: 20px;"></video>
+
+    <!-- Optional Image instead of video
+    <img src="assets/direction-map.png" alt="Map to Hall" style="width: 100%; border-radius: 12px; margin-top: 20px;" />
+    -->
+
+    <p style="margin-top: 10px; font-style: italic;">Gunakan Waze atau Google Maps sebagai panduan ke lokasi dewan. Setelah tiba di lokasi, 
+    parking valet akan disediakan untuk semua tetamu.</p>
+  </div>
+</div>
+
+<!-- GIFT MODAL 
+<div id="giftModal" class="modal">
+  <div class="modal-content gift-modal">
+    <span class="close" onclick="closeModal('giftModal')">&times;</span>
+    <h3>GIFT</h3>
+
+    <!-- Touch 'n Go 
+    <div class="gift-card">
+      <div class="gift-title">
+        <img src="assets/TngLogo.png" alt="TnG Logo" />
+        <span>Touch 'n Go</span>
+      </div>
+      <img src="assets/tng.jpeg" alt="Touch 'n Go QR" class="qr-image" />
+      <p class="recipient-name">Muhammad Shafiq Faris Bin Shamsul Ariffin</p>
+    </div>
+
+    <!-- Maybank 
+    <div class="gift-card">
+      <div class="gift-title">
+        <img src="assets/MaybankLogo.png" alt="Maybank Logo" />
+        <span>Maybank</span>
+      </div>
+      <img src="assets/maybank.png" alt="Maybank QR" class="qr-image" />
+      <p class="recipient-name">Muhammad Shafiq Faris Bin Shamsul Ariffin</p>
+    </div>
+  </div>
+</div>
+-->
+
+
+<!-- CALL Modal -->
+<div id="callModal" class="modal">
+  <div class="modal-content contact-modal">
+    <span class="close" onclick="closeModal('callModal')">&times;</span>
+    <h3>CONTACT</h3>
+
+    <!-- Contact 1 -->
+    <div class="contact-entry">
+      <div class="contact-info">
+        <strong>Shahira Fazira</strong><br><em>Bride Assistant</em>
+      </div>
+      <div class="contact-actions">
+        <a href="https://wa.me/60178778471?text=Fairuz%20%26%20Izzati%20Wedding" target="_blank" class="wa-btn" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+60178778471" class="phone-number">+6017-877 8471</a>
+      </div>
+    </div>
+
+    <!-- Contact 2 -->
+    <div class="contact-entry">
+      <div class="contact-info">
+        <strong>Suria Amir</strong><br><em>Sister</em>
+      </div>
+      <div class="contact-actions">
+        <a href="https://wa.me/60122238345?text=Fairuz%20%26%20Izzati%20Wedding" target="_blank" class="wa-btn" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+60122238345" class="phone-number">+6012-2238 345</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<!-- MAP MODAL -->
+<div id="mapModal" class="modal" onclick="handleModalClick(event, 'mapModal')">
+  <div class="modal-content location-modal">
+    <span class="close" onclick="closeModal('mapModal')">&times;</span>
+    <h3>LOCATION</h3>
+
+    <p class="venue-name">Evanthea Wedding Hall</p>
+    <p class="venue-address">
+      Wisma IAV, 86, L1-01,  <br>
+      Jalan Pasar, Pudu,<br>
+      55100 Kuala Lumpur,<br>
+      Wilayah Persekutuan Kuala Lumpur
+    </p>
+
+    <div class="location-buttons">
+      <a href="https://maps.app.goo.gl/keUAhYEHi5GmEsxCA" class="map-btn" target="_blank">
+        <img src="assets/google.png" alt="Google Maps Icon" />
+        Maps
+      </a>
+    
+      <a href="https://ul.waze.com/ul?place=ChIJFeIA5nY3zDERczvTo7gJuJY&ll=3.13524710%2C101.71671640&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" class="map-btn" target="_blank">
+        <img src="assets/waze.png" alt="Waze Icon" />
+        Waze
+      </a>
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+<!-- UNIFIED RSVP MODAL -->
+<div id="rsvpModal" class="modal" onclick="handleModalClick(event, 'rsvpModal')">
+  <div class="modal-content rsvp-modal">
+    <span class="close" onclick="closeModal('rsvpModal')">&times;</span>
+    <h3>RSVP & WISHES</h3>
+    <form id="rsvpForm">
+      <input type="text" name="name" placeholder="Your Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+
+      <select name="status" id="status" required>
+        <option value="">Will you attend?</option>
+        <option value="Attending">Yes</option>
+        <option value="Not Attending">No</option>
+      </select>
+
+      <div id="attendanceGroup" style="display:none;">
+        <select name="attendance" required>
+          <option value="">Guests attending</option>
+          <option value="1">Just Me (1 Person)</option>
+          <option value="2">Me + 1 Guest (2 People)</option>
+        </select>
+        <!--<small style="font-style: italic; color: #888;">
+          <div class="attendance-note">* Limited to 2 adults only. No children, please.</div>
+        </small> -->
+        
+      </div>
+      
+
+      <textarea name="wishes" placeholder="wishes (optional)"></textarea>
+
+      <div class="form-actions">
+        <button type="submit">Submit</button>
+        <button type="button" onclick="closeModal('rsvpModal')">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+<div class="bottom-nav">
+  <a onclick="openModal('callModal')">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 3 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72c.12.83.37 1.63.73 2.38a2 2 0 0 1-.45 2.11L9 11a16 16 0 0 0 4 4l1.79-1.28a2 2 0 0 1 2.11-.45c.75.36 1.55.61 2.38.73A2 2 0 0 1 22 16.92z" />
+    </svg>
+    <span>Call</span>
+  </a>
+
+  <a onclick="openModal('mapModal')">
+    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></svg>
+    <span>Map</span>
+  </a>
+  
+
+  <a onclick="openModal('giftModal')">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+      <path d="M17 3L4 16V21H9L22 8L17 3Z" />
+    </svg>
+    <span>Guide</span>
+  </a>
+  
+
+  <a onclick="openModal('rsvpModal')">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+      <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" />
+      <path d="M22 6L12 13L2 6" />
+    </svg>
+    <span>RSVP</span>
+  </a>
+  
+  
+  
+</div>
+
+<!-- Music Toggle Button -->
+<button id="musicToggle" class="music-toggle">
+  🔇
+</button>
+
+
+<script>
+  const gateLeft = document.getElementById("gateLeft");
+  const gateRight = document.getElementById("gateRight");
+  const music = document.getElementById("bgMusic");
+  const mainContent = document.getElementById("mainContent");
+
+  function openGate() {
+  gateLeft.classList.add("open");
+  gateRight.classList.add("open");
+  document.querySelector(".open-btn").classList.add("hidden");
+  music.play();
+  document.getElementById('musicToggle').textContent = '🔊';
+
+  // Hide ALL modals just in case
+  document.querySelectorAll('.modal').forEach(modal => {
+    modal.style.display = 'none';
+  });
+
+  setTimeout(() => {
+    gateLeft.style.display = "none";
+    gateRight.style.display = "none";
+    mainContent.classList.remove("hidden");
+    document.getElementById("musicToggle").style.display = "block";
+    setInterval(createPetal, 400);
+  }, 1200);
+}
+
+
+
+
+  const countdownDate = new Date("May 25, 2025 12:30:00").getTime();
+  const timer = document.getElementById("timer");
+
+  setInterval(() => {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }, 1000);
+
+  function openModal(id) {
+  document.getElementById(id).style.display = 'flex';
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+
+  
+</script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    spaceBetween: 20,
+  });
+</script>
+
+<script>
+
+
+  const musicToggle = document.getElementById('musicToggle');
+
+musicToggle.addEventListener('click', function () {
+  if (music.paused) {
+    music.play();
+    musicToggle.textContent = '🔊';
+  } else {
+    music.pause();
+    musicToggle.textContent = '🔇';
+  }
+});
+
+function handleModalClick(event, modalId) {
+  const content = document.querySelector(`#${modalId} .modal-content`);
+  if (!content.contains(event.target)) {
+    closeModal(modalId);
+  }
+}
+
+
+</script>
+
+
+<!-- Modal Logic + Submit Handler -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyJ0EpyftBm1_YCGpUN9nnDMe1cWOYAK8eI__UpjQK2ODyjkb4hkxssOknAB2zE2HKK/exec';
+  const form = document.getElementById("rsvpForm");
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+
+    
+
+    const formData = new FormData(form);
+
+    fetch(scriptURL, { method: "POST", body: formData })
+      .then(response => response.text())
+      .then(text => {
+        if (text === "Duplicate RSVP") {
+          alert("⚠️ You've already submitted an RSVP with this email.");
+        } else {
+          alert("✅ Thank you for your RSVP! A confirmation has been sent to your email.");
+          form.reset();
+          document.getElementById("attendanceGroup").style.display = "none";
+        }
+      })
+      .catch(error => {
+        console.error("Fetch error:", error);
+        alert("❌ Something went wrong. Please try again later.");
+      });
+  });
+</script> 
+
+<script>
+  const fadeElements = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Only animate once
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  fadeElements.forEach(el => observer.observe(el));
+</script>
+
+
+<script>
+  const statusSelect = document.getElementById("status");
+  const attendanceGroup = document.getElementById("attendanceGroup");
+
+  statusSelect.addEventListener("change", function () {
+    attendanceGroup.style.display = this.value === "Attending" ? "block" : "none";
+  });
+</script>
+
+<script>
+  function createPetal() {
+    const petal = document.createElement("img");
+    petal.src = Math.random() < 0.5 ? 'assets/petal1.png' : 'assets/petal2.png';
+    petal.className = "petal";
+  
+    petal.style.left = Math.random() * 100 + "vw";
+    petal.style.animationDuration = (6 + Math.random() * 4) + "s"; // 6–10s fall time
+    petal.style.transform = `scale(${0.5 + Math.random()}) rotate(${Math.random() * 360}deg)`;
+  
+    document.getElementById("petalContainer").appendChild(petal);
+  
+    setTimeout(() => petal.remove(), 10000); // remove after animation
+  }
+  </script>
+  
+<div id="petalContainer"></div>
+
+</body>
+
+
+</html>
