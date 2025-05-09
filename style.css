@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Georgia', serif;
-  background-color:  #ffeef2;
+  background-color: #fff9f9e7;
 }
 .hidden {
   display: none !important;
@@ -21,13 +21,13 @@ body {
 }
 .gate-left {
   left: 0;
-  background-image: url('assets/2121.png');
+  background-image: url('assets/row-1-column-1\ \(1\).png');
   background-position: left center;
 }
 
 .gate-right {
   right: 0;
-  background-image: url('assets/21211.png');
+  background-image: url('assets/row-1-column-2.png');
   background-position: right center;
 }
 
@@ -56,7 +56,7 @@ body {
   height: clamp(140px, 30vw, 180px);
   border-radius: 50%;
   border: none;
-  background-color: hwb(303 82% 2%);
+  background-color: #f7e7cee7;
   box-shadow: 0 4px 14px rgba(0,0,0,0.12);
   padding: 0;
   margin: 0;
@@ -226,7 +226,7 @@ section {
 .program-card {
   max-width: 90%;
   margin: auto;
-  background: #fffaf5;
+  background: white;
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -265,7 +265,7 @@ section {
   background-color: rgba(0,0,0,0.5);
 }
 .modal-content {
-  background-color: #fffaf5;
+  background-color: #fff;
   padding: 30px;
   border-radius: 14px;
   text-align: center;
@@ -302,7 +302,7 @@ section {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #ffdef4;
+  background: #f7e7cee7;
   border-top: 1px solid #ccc;
   display: flex;
   justify-content: space-around;
@@ -330,7 +330,7 @@ section {
   transition: stroke 0.3s;
 }
 .bottom-nav a:hover svg {
-  stroke: #d63384;
+  stroke: #ffdedee7;
 }
 
 .attendance-note {
@@ -395,17 +395,17 @@ section {
   bottom: 10px;
 }
 .swiper-pagination-bullet {
-  background: #fffaf5;
+  background: #d63384;
   opacity: 0.5;
 }
 .swiper-pagination-bullet-active {
-  background: #fffaf5;
+  background: #d63384;
   opacity: 1;
 }
 
 /* Contact Modal */
 .contact-modal {
-  background-color: #fffaf5;
+  background-color: #f6e9d7;
   border-radius: 16px;
   padding: 30px 20px;
   max-width: 400px;
@@ -415,7 +415,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fffaf5;
+  background: #fef9f4;
   margin-top: 15px;
   padding: 10px 15px;
   border-radius: 10px;
@@ -466,7 +466,7 @@ section {
 
 /* Map Modal */
 .location-modal {
-  background-color: #fffaf5;
+  background-color: #f6e9d7;
   border-radius: 16px;
   padding: 30px 20px;
   max-width: 400px;
@@ -522,14 +522,14 @@ section {
 .gift-modal {
   max-height: 90vh;
   overflow-y: auto;
-  background-color: #fffaf5;
+  background-color: #f6e9d7;
   padding: 30px 20px;
   border-radius: 16px;
   max-width: 450px;
   width: 90%;
 }
 .gift-card {
-  background: #fffaf5;
+  background: #fef9f4;
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 20px;
@@ -569,7 +569,7 @@ section {
 
 /* RSVP */
 .rsvp-modal {
-  background: #fffaf5;
+  background: #f6e9d7;
   border-radius: 16px;
   padding: 25px 20px;
   max-width: 450px;
@@ -660,7 +660,7 @@ textarea {
   transition: background-color 0.3s;
 }
 .music-toggle:hover {
-  background-color: #fffaf5;
+  background-color: #f0f0f0;
 }
 
 .info-box {
@@ -760,7 +760,7 @@ textarea {
 }
 
 .rsvp-modal button[type="submit"] {
-  background-color: #fffaf5;
+  background-color: #b47d7d;
   color: white;
 }
 
@@ -852,10 +852,10 @@ textarea {
   align-items: center;
   gap: 10px;
   padding: 10px 18px;
-  border: 1.5px solid #fffaf5;
+  border: 1.5px solid #c5b9ac;
   border-radius: 999px;
   background-color: #fffaf5;
-  color: #fffaf5;
+  color: #6b4e32;
   font-family: 'Georgia', serif;
   font-size: 14px;
   font-weight: 500;
@@ -887,10 +887,10 @@ textarea {
 .save-date-btn {
   padding: 10px 22px;
   font-size: 14px;
-  border: 1.5px solid #fffaf5;
+  border: 1.5px solid #bba692;
   border-radius: 999px;
   background-color: #fffaf5;
-  color: #ffa4c3;
+  color: #6b4e32;
   font-family: 'Georgia', serif;
   font-weight: 500;
   cursor: pointer;
@@ -944,7 +944,7 @@ textarea {
   width: 6px;
 }
 .ucapan-scrollbox::-webkit-scrollbar-thumb {
-  background-color: #fffaf5;
+  background-color: #ffe17c;
   border-radius: 10px;
 }
 .ucapan-scrollbox::-webkit-scrollbar-track {
