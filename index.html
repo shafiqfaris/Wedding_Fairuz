@@ -149,15 +149,15 @@
   <section class="program">
     <div class="program-card">
       <h3>ATUR CARA MAJLIS</h3>
-      <p>Kehadiran Tetamu: 
+      <p>Jamuan Makan
         <br>
-        <strong>11:00 am</strong></p>
+        <strong>11:00 am - 4 pm</strong></p>
       <p>Ketibaan Pengantin
         <br>
         <strong>12:30 pm</strong></p>
-      <p>Jamuan Makan: 
+      <p>Majlis Berakhir
         <br> 
-        <strong>1:30 pm – 4:00 pm</strong></p>
+        <strong>4:00 pm</strong></p>
     </div>
   </section>
 </section>
@@ -200,7 +200,6 @@
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="assets/picture1.jpg" alt="Photo 1" /></div>
-        <div class="swiper-slide"><img src="assets/picture2.jpg" alt="Photo 2" /></div>
         <div class="swiper-slide"><img src="assets/picture3.jpg" alt="Photo 3" /></div>
         <div class="swiper-slide"><img src="assets/picture4.jpg" alt="Photo 7" /></div>
       </div>
@@ -529,13 +528,11 @@ function handleModalClick(event, modalId) {
 
 <!-- Modal Logic + Submit Handler -->
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyJ0EpyftBm1_YCGpUN9nnDMe1cWOYAK8eI__UpjQK2ODyjkb4hkxssOknAB2zE2HKK/exec';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwFyWILw_uP0ZgkohKHuINf08HSkVeiuHQzOVRodPlCfhqGGX0tmQf6Qzg0Iad6XnY-Rw/exec';
   const form = document.getElementById("rsvpForm");
 
   form.addEventListener("submit", e => {
     e.preventDefault();
-
-    
 
     const formData = new FormData(form);
 
@@ -547,7 +544,6 @@ function handleModalClick(event, modalId) {
         } else {
           alert("✅ Thank you for your RSVP! A confirmation has been sent to your email.");
           form.reset();
-          document.getElementById("attendanceGroup").style.display = "none";
         }
       })
       .catch(error => {
