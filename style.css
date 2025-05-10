@@ -980,3 +980,32 @@ textarea {
   font-family: 'Arial', sans-serif;
   text-align: right;
 }
+
+#splashScreen {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #fff0f5; /* light floral tone */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 99999;
+  transition: opacity 1s ease;
+}
+
+.splash-content img {
+  max-width: 120px;
+  animation: pulse 2s infinite;
+}
+.splash-content p {
+  margin-top: 12px;
+  font-family: 'Tangerine', cursive;
+  font-size: 24px;
+  color: #b05574;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}

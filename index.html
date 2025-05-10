@@ -8,6 +8,14 @@
 </head>
 <body>
 
+  <div id="splashScreen">
+    <div class="splash-content">
+      <img src="assets/logo.png" alt="Fairuz & Izzati" />
+      <p>Loading your invitation...</p>
+    </div>
+  </div>
+  
+
 <!-- Gate Animation -->
 <div class="gate-left" id="gateLeft"></div>
 <div class="gate-right" id="gateRight"></div>
@@ -43,7 +51,7 @@
     <p>&</p>
     <p>Salam Sejahtera</p>
     <br>
-    <p>Hajah Umi Kalthom Binti A Rahman (Balu kepada Haji Mustapha Bin Ismail) 
+    <p>Hajah Umi Kalthom Binti A Rahman <br> (Balu kepada Haji Mustapha Bin Ismail) 
     </p>
     <p>Haji Saiful Bahari Bin A Rahman </p>
     <br>
@@ -593,6 +601,19 @@ function handleModalClick(event, modalId) {
   </script>
   
 <div id="petalContainer"></div>
+
+
+<script>
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      const splash = document.getElementById("splashScreen");
+      splash.style.opacity = 0;
+      setTimeout(() => splash.style.display = "none", 1000); // Wait for fade-out
+    }, 2000); // Show splash screen for at least 2 seconds
+  });
+</script>
+
+
 
 </body>
 
