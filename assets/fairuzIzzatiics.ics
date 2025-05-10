@@ -2,10 +2,17 @@ BEGIN:VCALENDAR
 VERSION:2.0
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-SUMMARY:Majlis Walimatul Urus Izzati & Fairuz
-DTSTART:20250525T033000Z
-DTEND:20250525T073000Z
-LOCATION:Evanthea Wedding Hall Kuala Lumpur
-DESCRIPTION:Majlis akad nikah dan jamuan makan Izzati & Fairuz di Evanthea Wedding Hall.
+SUMMARY:Majlis Perkahwinan Fairuz & Izzati
+DTSTART:20250531T030000Z
+DTEND:20250531T080000Z
+DESCRIPTION:Jemput hadir ke majlis perkahwinan Fairuz & Izzati.\nLokasi: Orchid Event Space, Sri Pinang Glass House, Benut, Johor Darul Ta'zim
+LOCATION:Orchid Event Space, Sri Pinang Glass House, Benut, Johor Darul Ta'zim
+STATUS:CONFIRMED
+SEQUENCE:0
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder for Majlis Perkahwinan Fairuz & Izzati
+END:VALARM
 END:VEVENT
 END:VCALENDAR
