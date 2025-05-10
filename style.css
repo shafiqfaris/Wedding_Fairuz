@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Georgia', serif;
-  background-color: #fff9f9e7;
+  background-color: #f0f8ff;
 }
 .hidden {
   display: none !important;
@@ -56,7 +56,7 @@ body {
   height: clamp(140px, 30vw, 180px);
   border-radius: 50%;
   border: none;
-  background-color: #f7e7cee7;
+  background-color: #e5edfae7;
   box-shadow: 0 4px 14px rgba(0,0,0,0.12);
   padding: 0;
   margin: 0;
@@ -88,7 +88,7 @@ body {
 
 
 .timeline-box {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 16px;
   padding: 30px 20px;
   margin: 40px auto;
@@ -108,7 +108,7 @@ body {
   font-size: 18px;
   font-weight: bold;
   font-family: 'Georgia', serif;
-  color: #4a3b2f;
+  color: #000000;
   margin: 4px 0 0;
 }
 
@@ -148,7 +148,7 @@ body {
 
 
 .doa-section {
-  background-color: #fffaf5;
+  background-color: #f0f8ff;
   padding: 40px 20px;
   text-align: center;
   font-family: 'Georgia', serif;
@@ -302,8 +302,8 @@ section {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #f7e7cee7;
-  border-top: 1px solid #ccc;
+  background: #afe3f8e7;
+  border-top: 1px solid #7a8fb6;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -344,7 +344,7 @@ section {
   text-align: center;
   font-size: 0.95rem;
   font-style: italic;
-  color: #5a4b3c;
+  color: #ceedff;
   margin: 2rem auto 1rem;
   max-width: 90%;
   padding: 1rem;
@@ -395,17 +395,17 @@ section {
   bottom: 10px;
 }
 .swiper-pagination-bullet {
-  background: #d63384;
+  background: #c6e7f7;
   opacity: 0.5;
 }
 .swiper-pagination-bullet-active {
-  background: #d63384;
+  background: #cef5ff;
   opacity: 1;
 }
 
 /* Contact Modal */
 .contact-modal {
-  background-color: #f6e9d7;
+  background-color: #c3fbff;
   border-radius: 16px;
   padding: 30px 20px;
   max-width: 400px;
@@ -415,7 +415,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fef9f4;
+  background: #c1e2e7;
   margin-top: 15px;
   padding: 10px 15px;
   border-radius: 10px;
@@ -466,7 +466,7 @@ section {
 
 /* Map Modal */
 .location-modal {
-  background-color: #f6e9d7;
+  background-color: #c5e6fa;
   border-radius: 16px;
   padding: 30px 20px;
   max-width: 400px;
@@ -504,9 +504,9 @@ section {
   transition: all 0.3s ease;
 }
 .map-btn:hover {
-  background-color: #d63384;
+  background-color: #091ab1;
   color: white;
-  border-color: #d63384;
+  border-color: #c9e8fd;
 }
 .map-btn img {
   width: 20px;
@@ -522,14 +522,14 @@ section {
 .gift-modal {
   max-height: 90vh;
   overflow-y: auto;
-  background-color: #f6e9d7;
+  background-color: #b6d5f1;
   padding: 30px 20px;
   border-radius: 16px;
   max-width: 450px;
   width: 90%;
 }
 .gift-card {
-  background: #fef9f4;
+  background: #e5edff;
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 20px;
@@ -569,7 +569,7 @@ section {
 
 /* RSVP */
 .rsvp-modal {
-  background: #f6e9d7;
+  background: #d5d9fd;
   border-radius: 16px;
   padding: 25px 20px;
   max-width: 450px;
@@ -660,7 +660,7 @@ textarea {
   transition: background-color 0.3s;
 }
 .music-toggle:hover {
-  background-color: #f0f0f0;
+  background-color: #c1e5f0;
 }
 
 .info-box {
@@ -712,12 +712,12 @@ textarea {
 }
 
 .swiper-pagination-bullet {
-  background-color: #802929;
+  background-color: #c7cafa;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #fa7777; /* Change to suit your wedding theme */
+  background-color: hsl(219, 92%, 85%); /* Change to suit your wedding theme */
 }
 
 .rsvp-modal {
@@ -734,7 +734,7 @@ textarea {
   margin: 10px 0;
   font-size: 16px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   box-sizing: border-box;
 }
 
@@ -760,12 +760,12 @@ textarea {
 }
 
 .rsvp-modal button[type="submit"] {
-  background-color: #b47d7d;
+  background-color: #559eff;
   color: white;
 }
 
 .rsvp-modal button[type="button"] {
-  background-color: #ddd;
+  background-color: #e2f5fa;
 }
 
 #petalContainer {
@@ -799,7 +799,7 @@ textarea {
 }
 
 .wish-wall {
-  background: #fdf9f6;
+  background: #b3bcee;
   padding: 30px 20px;
   border-radius: 16px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.05);
@@ -852,10 +852,10 @@ textarea {
   align-items: center;
   gap: 10px;
   padding: 10px 18px;
-  border: 1.5px solid #c5b9ac;
+  border: 1.5px solid #dbeaf7;
   border-radius: 999px;
-  background-color: #fffaf5;
-  color: #6b4e32;
+  background-color: #d1f7f7;
+  color: #aedae6;
   font-family: 'Georgia', serif;
   font-size: 14px;
   font-weight: 500;
@@ -865,8 +865,8 @@ textarea {
 }
 
 .calendar-min-btn:hover {
-  background-color: #f3ede8;
-  border-color: #bba692;
+  background-color: #c9e7ff;
+  border-color: #cbe3ff;
 }
 
 .calendar-min-btn img {
@@ -887,10 +887,10 @@ textarea {
 .save-date-btn {
   padding: 10px 22px;
   font-size: 14px;
-  border: 1.5px solid #bba692;
+  border: 1.5px solid #cfddfc;
   border-radius: 999px;
-  background-color: #fffaf5;
-  color: #6b4e32;
+  background-color: #d9e7f1;
+  color: #000000;
   font-family: 'Georgia', serif;
   font-weight: 500;
   cursor: pointer;
@@ -899,8 +899,8 @@ textarea {
 }
 
 .save-date-btn:hover {
-  background-color: #f3ede8;
-  border-color: #a88b73;
+  background-color: #c6ebfa;
+  border-color: #dbf1f5;
 }
 
 
@@ -936,7 +936,7 @@ textarea {
   padding-right: 0.5rem;
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #ffb443 #f0f0f0;
+  scrollbar-color: #d3ecfa #f0f0f0;
 }
 
 /* Webkit scrollbar style */
@@ -944,7 +944,7 @@ textarea {
   width: 6px;
 }
 .ucapan-scrollbox::-webkit-scrollbar-thumb {
-  background-color: #ffe17c;
+  background-color: #defffc;
   border-radius: 10px;
 }
 .ucapan-scrollbox::-webkit-scrollbar-track {
@@ -952,7 +952,7 @@ textarea {
 }
 
 .ucapan-message {
-  background: #ffffff;
+  background: #ecfaff;
   border-radius: 0.75rem;
   padding: 1rem;
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
@@ -984,7 +984,7 @@ textarea {
 #splashScreen {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #fff0f5; /* light floral tone */
+  background-color: #f7fbff; /* light floral tone */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1001,7 +1001,7 @@ textarea {
   margin-top: 12px;
   font-family: 'Tangerine', cursive;
   font-size: 24px;
-  color: #b05574;
+  color: #000000;
 }
 
 @keyframes pulse {
