@@ -313,7 +313,7 @@ document.querySelectorAll('.ucapan-message').forEach(el => {
     <!-- Contact 2 -->
     <div class="contact-entry">
       <div class="contact-info">
-        <strong>Haji Saiful Bahri</strong><br><em></em>
+        <strong>Haji Saiful Bahri</strong><br><em>Bapa Saudara</em>
       </div>
       <div class="contact-actions">
         <a href="https://wa.me/60137510284?text=Fairuz%20%26%20Izzati%20Wedding" target="_blank" class="wa-btn" title="WhatsApp">
@@ -365,7 +365,7 @@ document.querySelectorAll('.ucapan-message').forEach(el => {
     <h3>RSVP & WISHES</h3>
     <form id="rsvpForm">
       <input type="text" name="name" placeholder="Your Full Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="email" name="email" placeholder="Email Address (optional)" optional />
       <input type="tel" name="phone" placeholder="Phone Number" required />
 
       <select name="status" id="status" required>
@@ -528,7 +528,7 @@ function handleModalClick(event, modalId) {
 
 <!-- Modal Logic + Submit Handler -->
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwFyWILw_uP0ZgkohKHuINf08HSkVeiuHQzOVRodPlCfhqGGX0tmQf6Qzg0Iad6XnY-Rw/exec';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyi3yphnM0KX0eKiQOg4h_DJZZIBcEY3-bNkt1deojByvECDwXwMDZE7Q_Wk7L55XDqiA/exec';
   const form = document.getElementById("rsvpForm");
 
   form.addEventListener("submit", e => {
