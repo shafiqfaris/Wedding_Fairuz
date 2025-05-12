@@ -21,13 +21,13 @@ body {
 }
 .gate-left {
   left: 0;
-  background-image: url('assets/gate1.png');
+  background-image: url('assets/gate11.png');
   background-position: left center;
 }
 
 .gate-right {
   right: 0;
-  background-image: url('assets/gate2.png');
+  background-image: url('assets/gate22.png');
   background-position: right center;
 }
 
