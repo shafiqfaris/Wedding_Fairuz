@@ -13,23 +13,24 @@ body {
   top: 0;
   width: 50vw;
   height: 100vh;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: center;
   z-index: 9999;
   transition: transform 1.2s ease-in-out;
 }
+
 .gate-left {
   left: 0;
   background-image: url('assets/gate11.png');
-  background-position: left center;
+  background-position: right center;
 }
 
 .gate-right {
   right: 0;
   background-image: url('assets/gate22.png');
-  background-position: right center;
+  background-position: left center;
 }
+
 
 .gate-left.open {
   transform: translateX(-100%);
